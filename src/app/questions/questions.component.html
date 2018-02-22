@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="title col-md-12">
+        <h3>Angular Quiz Application</h3>
+    </div>
+</div>
+<br><br>
+<div class="container row col-md-12">
+    <div class="inside col-md-6">
+        <div [hidden]="isFirst">
+            <!-- <button type="button" class="btn btn-primary" (click)="prev(question.id)" value="Prev">Prev</button> -->
+            <img src="../../assets/prev.jpg" (click)="prev(question.id)">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div [hidden]="isLast">
+            <!-- <button type="button" class="btn btn-primary" (click)="next(question.id)" value="Next">Next</button> -->
+            <img src="../../assets/next.jpg" (click)="next(question.id)">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="ques col-md-12">
+            <div>
+                {{question.name}}
+                <div class="answer button-group">
+                    <button type="button" class="btn btn-secondary" *ngFor="let option of question.options" (click)="submitAnswer(option.value)">{{option.name}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row" [hidden]="!showFinalScore">
+        <div class="finalScore col-md-6 col-md-offset-3">
+            <h2>Your final Score is {{totalScore}}.</h2>
+        </div>
+    </div>
+</div>

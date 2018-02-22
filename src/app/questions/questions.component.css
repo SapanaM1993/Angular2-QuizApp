@@ -1,0 +1,43 @@
+.ques{
+    padding: 1px;
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Merriweather', serif;
+}
+
+.answer{
+    padding: 1px;
+}
+
+.finalScore{
+    color: blue;
+    margin-top: 20px;
+}
+
+img {
+	width: 25px;
+}
+
+button	{
+	border: 1px solid grey;
+	border-radius: 10px;
+	margin: 0 20px;
+	font-size: 2rem;
+}
+
+button:hover{
+    border: 2px solid red;
+}
+
+.finalScore:hover{
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px 20px red inset;
+}
+
+title{
+    padding: 10px;
+    margin: 10px;
+}
+
+
